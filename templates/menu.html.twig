@@ -1,0 +1,30 @@
+<div id="top" class="col-center" {{ image['global']['background']['style'] }}>
+    <div id="menu" class="page-size">
+        <div><img id="logo" {{ image['global']['mainLogo']['src'] }}></div>
+
+        <div id="menu-list">
+            <div><a href="/"><div class="menu-cel">Accueil</div></a></div>
+            <div><div class="menu-cel" id="products-cel">
+                Notre solution <i class="fas fa-caret-down caret-menu"></i>
+                <div id="menu-products">
+                    <a href="/produit/1"><div class="menu-product" style="border-color: var(--solution1);">
+                        {{ text.global.solution1 }}</div></a>
+                    <a href="/produit/2"><div class="menu-product" style="border-color: var(--solution2);">
+                        {{ text.global.solution2 }}</div></a>
+                    <a href="/produit/3"><div class="menu-product" style="border-color: var(--solution3);">
+                        {{ text.global.solution3 }}</div></a>
+                    <a href="/produit/4"><div class="menu-product" style="border-color: var(--solution4);">
+                        {{ text.global.solution4 }}</div></a>
+                </div>
+            </div></div>
+            <div><a href="/qui-sommes-nous"><div class="menu-cel">Qui sommes-nous</div></a></div>
+            <div><a href="/nous-contacter"><div class="menu-cel">Nous contacter</div></a></div>
+        </div>
+    </div>
+
+    <div id="top-text">
+        {{ title }}
+    </div>
+
+    <img id="gradient" class="noselect" src="/images/gradient.png">
+</div>

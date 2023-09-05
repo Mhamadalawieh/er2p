@@ -1,0 +1,80 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheet %}
+    <link rel="stylesheet" href="/css/menu.css">
+    <link rel="stylesheet" href="/css/contact.css">
+{% endblock %}
+
+{% block script %}
+    <script src="/js/contact.js"></script>
+{% endblock %}
+
+{% block body %}
+    {% include 'menu.html.twig' with {'title': 'Contactez nous'} %}
+
+
+    <div id="page-content" class="col-center">
+        <div id="content" class="page-size">
+{#            <div id="contact-form">#}
+{#                <div class="title-contact">#}
+{#                    <i class="far fa-envelope icon-contact"></i> {{ text.formTitle }}#}
+{#                </div>#}
+{#                <form action="#" method="POST" id="form">#}
+{#                    <label for="name" class="label">Nom :</label>#}
+{#                    <input type="text" id="name" name="name" class="input" placeholder="Paul Dupont">#}
+
+{#                    <label for="phone" class="label">Numéro de téléphone :</label>#}
+{#                    <input type="tel" id="phone" name="phone" class="input" placeholder="07 12 34 56 78">#}
+
+{#                    <label for="message" class="label">Votre message :</label>#}
+{#                    <textarea name="message" id="message" class="input"></textarea>#}
+
+{#                    <div id="submit">Envoyer</div>#}
+{#                </form>#}
+{#            </div>#}
+
+            <div id="infos">
+                <div class="title-contact">
+                    {{ text.infosTitle }}
+                </div>
+
+                <div class="infos-title">
+                    <i class="fas fa-store-alt icon-contact"></i> Nos locaux
+                </div>
+                <div class="infos-text">
+                    {{ text.address|nl2br }}
+                </div>
+
+                <div class="infos-title" style="margin-top: 30px">
+                    <i class="far fa-address-book icon-contact"></i> Nos contacts
+                </div>
+                <div class="infos-text">
+                    {{ text.contact|nl2br }}
+                </div>
+
+                <div class="infos-title" style="margin-top: 30px">
+                    <i class="far fa-clock icon-contact"></i> Horaires
+                </div>
+                <div class="infos-text">
+                    {{ text.hourly|nl2br }}
+                </div>
+            </div>
+        </div>
+
+
+
+        <div id="map-block" class="page-size-col-left">
+            <div class="title-contact">
+                {{ text.mapTitle }}
+            </div>
+                <iframe id="map" class="page-size" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2700.028441258507!2d0.9806656158158663!3d47.41138640943572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47fcca85ccd4c531%3A0x9417b1ccd30534c9!2sER2P%20Solutions!5e0!3m2!1sfr!2sfr!4v1648387236168!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+    </div>
+
+
+
+
+    {% include 'foot.html.twig' %}
+
+{% endblock %}

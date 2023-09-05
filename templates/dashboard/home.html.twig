@@ -1,0 +1,56 @@
+{% extends 'base.html.twig' %}
+{#with {'title': 'Recherche utilisateur', 'return': '../../'} only#}
+{% block stylesheet %}
+    <link rel="stylesheet" href="/css/dashboard/menu.css">
+    <link rel="stylesheet" href="/css/dashboard/home.css">
+{% endblock %}
+
+{% block script %}
+    <script src="/js/dashboard/menu.js"></script>
+    <script src="/js/dashboard/home.js"></script>
+{% endblock %}
+
+{% block body %}
+    {% include 'dashboard/menu.html.twig' %}
+    <div id="content">
+        <div id="dbtitle">
+            Bienvenue sur votre espace de gestion
+        </div>
+        <div id="subtitle">
+            Gérez les textes, les images et les paramètres de votre site internet sans intervention
+        </div>
+
+        <div id="square-menu">
+            <div class="square-menu-line">
+                <a href="/dashboard-er2p/textes" class="square-menu-block">
+                    <i class="fa-solid fa-align-left icon-square"></i>
+                    <div class="text-square">Textes</div>
+                </a>
+                <a href="/dashboard-er2p/images" class="square-menu-block">
+                    <i class="fa-solid fa-image icon-square"></i>
+                    <div class="text-square">Images</div>
+                </a>
+                <a href="/" class="square-menu-block" style="background-color: var(--dbdark)">
+                    <i class="fa-solid fa-globe icon-square"></i>
+                    <div class="text-square">Site en ligne</div>
+                </a>
+            </div>
+            <div class="square-menu-line">
+                <a href="/dashboard-er2p/edit" class="square-menu-block">
+                    <i class="fa-solid fa-brush icon-square"></i>
+                    <div class="text-square" style="font-size: 16px">Personnalisation</div>
+                </a>
+                <a href="/dashboard-er2p/parametres" class="square-menu-block">
+                        <i class="fa-solid fa-gear icon-square"></i>
+                        <div class="text-square">Paramètres</div>
+                </a>
+                <a href="/dashboard-er2p/actus" class="square-menu-block">
+                    <i class="fa-solid fa-newspaper icon-square"></i>
+                    <div class="text-square">Actualités</div>
+                </a>
+            </div>
+        </div>
+
+
+    </div>
+{% endblock %}

@@ -1,0 +1,183 @@
+#tabs
+{
+    display: flex;
+}
+.tab
+{
+    margin-left: 15px;
+    padding: 2px 6px;
+
+    border-left: 2px solid var(--dbdark);
+
+    color: var(--dbdark);
+    font-size: 20px;
+    transition: 0.15s;
+    cursor: pointer;
+}
+.tab:hover
+{
+    color: var(--dbdark-secondary);
+    border-left: 2px solid var(--dbdark-secondary);
+}
+
+#list
+{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+
+    padding-left: 100px;
+    margin-bottom: 360px;
+}
+#text-choose-page
+{
+    margin-top: 50px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+#text-list
+{
+    display: none;
+    margin-top: 50px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+.text-block
+{
+    position: relative;
+    width: 680px;
+}
+.text
+{
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+
+    background-color: white;
+    color: var(--dbdark-secondary);
+    padding: 8px 20px;
+    font-size: 20px;
+    border: 2px solid var(--dbdark);
+    border-radius: 15px;
+    width: 900px;
+    cursor: pointer;
+    transition: 0.10s;
+}
+.text:hover
+{
+    box-shadow: 0px 3px 4px #acacac;
+}
+.text-icon-up
+{
+    display: none;
+}
+.text-left
+{
+    display: flex;
+}
+.text-title
+{
+    width: 440px;
+}
+.text-content
+{
+    width: 400px;
+    margin-left: 5px;
+    margin-top: 4px;
+    font-size: 16px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.input-text-block
+{
+    margin-bottom: 15px;
+    position: absolute;
+    z-index: 300;
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    bottom: -332px;
+    left: 10px;
+    width: 656px;
+    height: 315px;
+    border-bottom-right-radius: 10px;
+    padding: 10px 20px;
+    border-left: 2px solid var(--dbdark);
+
+    background-color: white;
+    cursor: default;
+    transition: 0.2s;
+    box-shadow: 0px 3px 4px #444444;
+}
+.text-textarea
+{
+    width: 100%;
+    color: var(--dbdark-secondary);
+    text-align: left;
+}
+
+.input-text
+{
+    border: 1px solid var(--dbdark);
+    border-radius: 10px;
+    font-family: Roboto;
+    font-size: 16px;
+
+    padding: 10px;
+
+    width: 632px;
+    height: 260px;
+    resize: none;
+}
+.text-save-btn
+{
+    margin-top: 5px;
+}
+#add-text
+{
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    padding-left: 10px;
+    border-left: 2px solid var(--dbdark);
+
+}
+#ta-content
+{
+    width: 500px;
+    height: 150px;
+    resize: none;
+}
+#dev-submit
+{
+    background-color: white;
+}
+.input{
+    margin-left: 3px;
+}
+
+.text-buttons
+{
+    display: flex;
+}
+.button-delete
+{
+    display: none;
+    margin-right: 15px;
+    color: var(--dbdark);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

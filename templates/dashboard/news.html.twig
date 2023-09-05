@@ -1,0 +1,65 @@
+{% extends 'base.html.twig' %}
+{#with {'title': 'Recherche utilisateur', 'return': '../../'} only#}
+{% block stylesheet %}
+    <link rel="stylesheet" href="/css/dashboard/menu.css">
+    <link rel="stylesheet" href="/css/dashboard/news.css">
+{% endblock %}
+
+{% block script %}
+    <script src="/js/dashboard/menu.js"></script>
+    <script src="/js/dashboard/news.js"></script>
+{% endblock %}
+{% block body %}
+    {% include 'dashboard/menu.html.twig' %}
+    <div id="content">
+    <div id="dbtitle">Gérer les actualités</div>
+        <div class="dbmidtitle">Créer une actualité</div>
+        <form id="add-actuality" method="post" action="/dashboard-er2p/actus/add" enctype="multipart/form-data">
+            <div class="dbsubtitle" style="margin-top: 10px">Titre de l'actualité :</div>
+            <input type="text" name="title" class="input" id="dev-input-name">
+
+            <div class="dbsubtitle" style="margin-top: 10px">Description :</div>
+            <textarea name="description" class="input" id="dev-input-description"></textarea>
+
+            <div class="dbsubtitle" style="margin-top: 10px">Date de publication (facultative) :</div>
+            <input type="date" name="date" class="input" id="dev-input-date">
+
+            <div class="dbsubtitle" style="margin-top: 10px">Fichier :</div>
+            <input type="file" class="input" id="actuality-file" name="actuality">
+
+            <input type="submit" value="Ajouter" class="btn" id="dev-submit">
+        </form>
+
+        <div class="dbsubtitle" id="actuality-list">Actualités :</div>
+        <div id="list">
+            {% for new in news %}
+                <div class="actuality-block">
+                    <div class="img-actuality" id="img-actuality-{{ new.id }}" style="background-image: url('/images/{{ new.path }}')"></div>
+                    <div class="img-name"></div>
+                    <div class="img-delete-btn img-btn button-delete" data-id="{{ new.id }}">
+                        <i class="fas fa-trash"></i>
+                    </div>
+                    <div class="actu-title">{{ new.title }}</div>
+                    <div class="actu-description">
+                        {{ new.description|nl2br }}
+                    </div>
+                </div>
+            {% endfor %}
+
+        </div>
+
+
+        {#    <div class="actuality-block">#}
+        {#        <div class="img-actuality" style="background-actuality: url('/actualitys/62364f53dd01f62364f53dd020.jpg')"></div>#}
+        {#        <div class="img-name">#}
+        {#            Paysage#}
+        {#        </div>#}
+        {#        <div class="img-edit-btn img-btn">#}
+        {#            <i class="fas fa-pen"></i>#}
+        {#        </div>#}
+        {#        <div class="img-delete-btn img-btn button-delete">#}
+        {#            <i class="fas fa-trash"></i>#}
+        {#        </div>#}
+        {#    </div>#}
+    </div>
+{% endblock %}

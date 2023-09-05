@@ -1,0 +1,113 @@
+#content
+{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+
+    color: var(--dark);
+}
+#contact-form
+{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+
+    width: 550px;
+}
+#infos
+{
+    width: 400px;
+}
+.title-contact
+{
+    font-size: 22px;
+
+    margin-bottom: 15px;
+}
+#form
+{
+    display: flex;
+    flex-direction: column;
+}
+.label
+{
+    font-size: 17px;
+}
+.input
+{
+    border: 1px solid lightgray;
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 3px 8px;
+    margin-bottom: 10px;
+}
+#message
+{
+    resize: none;
+    height: 120px;
+}
+#submit
+{
+    padding: 3px 0px;
+    text-align: center;
+    font-size: 14px;
+    width: 100px;
+    background: none;
+    outline: none;
+    border: 1px solid #b1b1b1;
+    border-radius: 10px;
+
+    cursor: pointer;
+    transition: 0.1s;
+}
+#submit:hover
+{
+    border: 1px solid var(--dark);
+}
+
+.infos-title
+{
+    font-size: 20px;
+
+    margin-bottom: 8px;
+}
+.infos-text
+{
+    margin-left: 13px;
+}
+
+
+#map-block
+{
+    margin-top: 50px;
+    color: var(--dark);
+}
+#map
+{
+    margin-bottom: 80px;
+    height: 600px;
+}
+.icon-contact
+{
+    color: var(--color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

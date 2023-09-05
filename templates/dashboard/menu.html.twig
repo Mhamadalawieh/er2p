@@ -1,0 +1,61 @@
+<div class="popup-block" id="error-popup-block">
+    <div id="error-popup" class="popup">
+        <i class="fa-solid fa-circle-exclamation popup-icon"></i>
+        <div class="popup-text"></div>
+    </div>
+</div>
+<div class="popup-block" id="succes-popup-block">
+    <div id="succes-popup" class="popup">
+        <i class="fa-solid fa-circle-check popup-icon"></i>
+        <div class="popup-text"></div>
+    </div>
+</div>
+<div id="menu">
+    <div id="logo-block">
+        <img id="logo" src="/images/logo.png" alt="Logo">
+    </div>
+    <a href="/dashboard-er2p/accueil"><div class="menu-cel">
+        <i class="fa-solid fa-house-chimney-user icon-cel"></i>
+        <div class="menu-cel-text">Accueil</div>
+        {% if page == 'admin-home' %}<div class="cel-active"></div>{% endif %}
+    </div></a>
+    <a href="/dashboard-er2p/textes"><div class="menu-cel">
+        <i class="fa-solid fa-align-left icon-cel"></i>
+        <div class="menu-cel-text">Textes</div>
+        {% if page == 'admin-text' %}<div class="cel-active"></div>{% endif %}
+    </div></a>
+    <a href="/dashboard-er2p/images"><div class="menu-cel">
+        <i class="fa-solid fa-image icon-cel"></i>
+        <div class="menu-cel-text">Images</div>
+        {% if page == 'admin-image' %}<div class="cel-active"></div>{% endif %}
+    </div></a>
+    <a href="/dashboard-er2p/actus"><div class="menu-cel">
+        <i class="fa-solid fa-newspaper icon-cel"></i>
+        <div class="menu-cel-text">Actualités</div>
+        {% if page == 'admin-news' %}<div class="cel-active"></div>{% endif %}
+    </div></a>
+    <a href="/dashboard-er2p/personnalisation"><div class="menu-cel">
+            <i class="fa-solid fa-brush icon-cel"></i>
+            <div class="menu-cel-text">Personnalisation</div>
+            {% if page == 'admin-edit' %}<div class="cel-active"></div>{% endif %}
+        </div></a>
+    <a href="/dashboard-er2p/parametres"><div class="menu-cel">
+        <i class="fa-solid fa-gear icon-cel"></i>
+        <div class="menu-cel-text">Paramètres</div>
+        {% if page == 'admin-setting' %}<div class="cel-active"></div>{% endif %}
+    </div></a>
+    <a href="/"><div class="menu-cel" style="margin-top: 60px">
+            <i class="fa-solid fa-globe icon-cel"></i>
+            <div class="menu-cel-text">Site en ligne</div>
+        </div></a>
+    <a href="/dashboard-er2p/logout"><div class="menu-cel">
+            <i class="fa-solid fa-arrow-right-from-bracket icon-cel"></i>
+            <div class="menu-cel-text">Déconnexion</div>
+        </div></a>
+
+    <div id="btn-dev" class="menu-cel">
+        <i class="fa-brands fa-dev icon-cel dev-icon-cel"></i>
+        <div class="menu-cel-text">Dev mode</div>
+        <div class="cel-active-dev"></div>
+    </div>
+</div>

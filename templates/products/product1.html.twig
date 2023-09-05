@@ -1,0 +1,53 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheet %}
+    <link rel="stylesheet" href="/css/menu.css">
+    <link rel="stylesheet" href="/css/products.css">
+{% endblock %}
+
+{% block script %}
+    <script src="/js/products.js"></script>
+{% endblock %}
+
+{% block body %}
+    {% include 'menu.html.twig' with {'title': 'La gestion informatique des librairies' } %}
+
+    <div id="content" class="col-center">
+        <div id="top" class="page-size">
+            <div id="image-product">
+                <div id="product-logo" style="color: var(--solution1)">{{ text.global.solution1 }}</div>
+            </div>
+            <div id="text">
+                <div id="title">{{ text.title1 }}</div>
+                <p id="description">{{ text.description1|nl2br }}</p>
+            </div>
+        </div>
+
+        <div style="height: 200px"></div>
+{#        <div id="infos" class="page-size">#}
+{#            <div id="infos-menu">#}
+{#                <div class="info-cel" data-cel="1">Présentation</div>#}
+{#                <div class="info-cel" data-cel="2">Caisse</div>#}
+{#                <div class="info-cel" data-cel="3">Ventes</div>#}
+{#                <div class="info-cel" data-cel="4">Achats</div>#}
+{#                <div class="info-cel" data-cel="5">Stocks</div>#}
+{#            </div>#}
+{#            <div id="infos-content">#}
+{#                <div id="info-title">Présentation</div>#}
+{#                <div id="info-description-1" class="info-description">Lorem Présentation is simply dummy text of the pringherhetine and teetting iherndustry. Lorem Iprherhsum has been threhe industryhre's standard dummy hretext ever since t^à_he 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>#}
+{#                <div id="info-description-2" class="info-description">Lorem Caisse is simply dummy text of the prrhehreintihg ane typesetting industry. Lorem eum hahres beerhn the industhrestandaheummy hrt everhrehre since rehthe 150k_-s, whenhr an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>#}
+{#                <div id="info-description-3" class="info-description">Lorem Ventes is simply dummy text of the hre and typesetting industry. Lorem Ipsum hrheas been the industry's standardtyj dumm(y')text ever since ty(') 1500è-s, when an unknown pr =inter took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>#}
+{#                <div id="info-description-4" class="info-description">Lorem Achats is simply dummy text of the rhe and typesetting inhrerhedustry. rheLorem Ipsum has been the industry's standard dummy text ever à)*since the )1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>#}
+{#                <div id="info-description-5" class="info-description">Lorem Stocks is simply dummy text of the printihreng and rhetypesetting industry. Lorem Ipsum has been the industry's sytluitandaoimrd dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>#}
+{#            </div>#}
+{#        </div>#}
+    </div>
+
+
+
+
+
+
+    {% include 'foot.html.twig' %}
+
+{% endblock %}

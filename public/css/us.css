@@ -1,0 +1,17 @@
+#content
+{
+    margin-top: 25px;
+    color: var(--dark);
+    margin-bottom: 150px;
+}
+.title
+{
+    margin-top: 50px;
+    font-weight: normal;
+}
+.icon-title
+{
+    color: var(--color);
+    margin-right: 6px;
+    font-size: 18px;
+}

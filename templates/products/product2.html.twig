@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheet %}
+    <link rel="stylesheet" href="/css/menu.css">
+    <link rel="stylesheet" href="/css/products.css">
+{% endblock %}
+
+{% block script %}
+    <script src="/js/products.js"></script>
+{% endblock %}
+
+{% block body %}
+    {% include 'menu.html.twig' with {'title': 'La gestion informatique des librairies' } %}
+
+    <div id="content" class="col-center">
+        <div id="top" class="page-size">
+            <div id="text">
+                <div id="title">{{ text.title2 }}</div>
+                <p id="description">{{ text.description2|nl2br }}</p>
+            </div>
+            <div id="image-product">
+                <div id="product-logo" style="color: var(--solution2)">{{ text.global.solution2 }}</div>
+            </div>
+        </div>
+    </div>
+
+    <div style="height: 200px"></div>
+
+
+
+
+
+    {% include 'foot.html.twig' %}
+
+{% endblock %}
